@@ -331,7 +331,7 @@ def laci():
     glPushMatrix()
     glBindTexture(GL_TEXTURE_2D, texture(2))
     glBegin(GL_QUADS)
-    glColor3f(1.0, 1.0, 0.0)
+    glColor3d(0.92, 0.51, 0.23)
     kotak(0.5, 0.8, 8.5, 4, 4.5, 4.7)
     # kaki kiri
     kotak(0.5, 0.5, 8.5, 4.3, 4.9, 8.3)
@@ -430,7 +430,7 @@ def lemaribawahtv():
     glRotatef(180.0, 0, 1, 0)
     glBindTexture(GL_TEXTURE_2D, texture(2))
     glBegin(GL_QUADS)
-    glColor3f(1.0, 1.0, 0.0)
+    glColor3f(0.92, 0.51, 0.23)
     kotak(0.5 - 32, 0.8, 8.5 - 21, 4 - 33.7, 4.5 - 2, 4.7 - 23)
     # kaki kiri
     kotak(0.5 - 32, 0.5, 8.5 - 21, 4.3 - 33.7, 4.9 - 2, 8.3 - 21)
