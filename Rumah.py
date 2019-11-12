@@ -23,11 +23,6 @@ def keyboard(key, x, y):
         if ypos > 360:
             ypos = 0
         glutPostRedisplay()
-    if ch == 'c':
-        ypos = ypos - 5
-        if ypos < 0:
-            ypos = 360
-        glutPostRedisplay()
     if ch == 'x':
         ypos = ypos - 5
         if ypos > 360:
