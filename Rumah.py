@@ -16,7 +16,7 @@ c = -30
 
 def keyboard(key, x, y):
     ch = key.decode("utf-8")
-    global ypos, a, b, c
+    global ypos,xpos, a, b, c
     # print(type(key), key, type(ch), ch)
     if ch == 'z':
         ypos = ypos + 5
@@ -27,6 +27,16 @@ def keyboard(key, x, y):
         ypos = ypos - 5
         if ypos > 360:
             ypos = 0
+        glutPostRedisplay()
+    if ch == 'r':
+        xpos = xpos + 5
+        if xpos > 360:
+            xpos = 0
+        glutPostRedisplay()
+    if ch == 'f':
+        xpos = xpos - 5
+        if xpos > 360:
+            xpos = 0
         glutPostRedisplay()
     if ch == 's':
         b = b + 1
